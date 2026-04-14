@@ -1,67 +1,67 @@
 // GSAP Timeline & Scroll Trigger
 let tl = gsap.timeline();
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-const onPress = (el, handler) => {
-  if (!el) return;
-  el.addEventListener("click", handler);
-  el.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
-      handler(e);
-    }
-  });
-};
+// const onPress = (el, handler) => {
+//   if (!el) return;
+//   el.addEventListener("click", handler);
+//   el.addEventListener("keydown", (e) => {
+//     if (e.key === "Enter" || e.key === " ") {
+//       e.preventDefault();
+//       handler(e);
+//     }
+//   });
+// };
 
-const debounce = (fn, wait = 150) => {
-  let t;
-  return (...args) => {
-    clearTimeout(t);
-    t = setTimeout(() => fn(...args), wait);
-  };
-};
+// const debounce = (fn, wait = 150) => {
+//   let t;
+//   return (...args) => {
+//     clearTimeout(t);
+//     t = setTimeout(() => fn(...args), wait);
+//   };
+// };
 
-const lenisAnimation = () => {
-  let lenis;
-  let rafFn;
+// const lenisAnimation = () => {
+//   let lenis;
+//   let rafFn;
 
-  const initLenis = () => {
-    if (window.innerWidth > 1024 && !lenis) {
-      lenis = new Lenis({ duration: 2 });
+//   const initLenis = () => {
+//     if (window.innerWidth > 1024 && !lenis) {
+//       lenis = new Lenis({ duration: 2 });
 
-      lenis.on("scroll", ScrollTrigger.update);
+//       lenis.on("scroll", ScrollTrigger.update);
 
-      rafFn = (time) => {
-        lenis.raf(time * 1000);
-      };
+//       rafFn = (time) => {
+//         lenis.raf(time * 1000);
+//       };
 
-      gsap.ticker.add(rafFn);
-      gsap.ticker.lagSmoothing(0);
-    }
-  };
+//       gsap.ticker.add(rafFn);
+//       gsap.ticker.lagSmoothing(0);
+//     }
+//   };
 
-  const destroyLenis = () => {
-    if (lenis) {
-      gsap.ticker.remove(rafFn);
-      lenis.destroy();
-      lenis = null;
-    }
-  };
+//   const destroyLenis = () => {
+//     if (lenis) {
+//       gsap.ticker.remove(rafFn);
+//       lenis.destroy();
+//       lenis = null;
+//     }
+//   };
 
-  initLenis();
+//   initLenis();
 
-  window.addEventListener(
-    "resize",
-    debounce(() => {
-      if (window.innerWidth > 1024) {
-        initLenis();
-      } else {
-        destroyLenis();
-      }
-    }, 200),
-    { passive: true },
-  );
-};
+//   window.addEventListener(
+//     "resize",
+//     debounce(() => {
+//       if (window.innerWidth > 1024) {
+//         initLenis();
+//       } else {
+//         destroyLenis();
+//       }
+//     }, 200),
+//     { passive: true },
+//   );
+// };
 
 const mobileNavBarAnimation = () => {
   const ham = document.querySelector(".ham");
@@ -75,11 +75,55 @@ const mobileNavBarAnimation = () => {
   function openNav() {
     if (!isMobile()) return;
 
-    gsap.to(nav, {
-      y: "0%",
+    let tl1 = gsap.timeline();
+
+    tl1.to(nav, {
+      height: "450px",
+      paddingBottom: "50px",
       duration: 0.1,
       ease: "none",
     });
+
+    tl1.fromTo(
+      ".look",
+      {
+        x: -20,
+      },
+      {
+        delay: 0.2,
+        opacity: 1,
+        x: 5,
+        duration: 0.3,
+        ease: "none",
+      },
+    );
+
+    tl1.fromTo(
+      ".nav-links li a",
+      {
+        x: -20,
+      },
+      {
+        opacity: 1,
+        x: 5,
+        duration: 0.1,
+        stagger: 0.1,
+        ease: "none",
+      },
+    );
+
+    tl1.fromTo(
+      ".nav-start",
+      {
+        x: -20,
+      },
+      {
+        opacity: 1,
+        x: 5,
+        duration: 0.1,
+        ease: "none",
+      },
+    );
 
     ham.style.display = "none";
     closeBtn.style.display = "flex";
@@ -88,10 +132,36 @@ const mobileNavBarAnimation = () => {
   function closeNav() {
     if (!isMobile()) return;
 
-    gsap.to(nav, {
-      y: "-150%",
+    let tl2 = gsap.timeline();
+
+    tl2.to(".nav-start", {
+      opacity: 0,
+      x: -20,
       duration: 0.1,
       ease: "none",
+    });
+
+    tl2.to(".nav-links li a", {
+      opacity: 0,
+      x: -20,
+      duration: 0.1,
+      stagger: -0.1,
+      ease: "none",
+    });
+
+    tl2.to(".look", {
+      delay: 0.1,
+      opacity: 0,
+      x: -20,
+      duration: 0.1,
+      ease: "none",
+    });
+
+    tl2.to(nav, {
+      height: 0,
+      duration: 0.1,
+      ease: "none",
+      paddingBottom: "0px",
     });
 
     ham.style.display = "flex";
@@ -122,6 +192,6 @@ const mobileNavBarAnimation = () => {
   });
 };
 
-lenisAnimation();
+// lenisAnimation();
 
 mobileNavBarAnimation();
