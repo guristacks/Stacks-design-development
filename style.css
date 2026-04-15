@@ -79,8 +79,9 @@ section {
   color: #fff;
 }
 h1 {
-  font-size: clamp(3rem, 6vw, 6.25rem);
-  line-height: 1.2;
+  line-height: clamp(1.1, 1, 1);
+  font-size: 5vw;
+  font-weight: 500;
 }
 h2 {
   font-size: clamp(1.75rem, 3.5vw, 2.8rem);
@@ -168,7 +169,6 @@ header {
 }
 .nav-right {
   height: 25px;
-  background: var(--blue);
   width: fit-content;
   border-radius: 30px;
 }
@@ -191,6 +191,10 @@ header {
 .ri-arrow-right-up-long-fill {
   font-size: 16px;
 }
+a.right-arrow:hover {
+  margin-left: 5px;
+  transform: rotate(45deg);
+}
 sup {
   background-color: var(--blue);
   border-radius: 50%;
@@ -206,6 +210,70 @@ sup {
   display: none;
 }
 
+/* SECTION - 1 HERO */
+.hero {
+  height: fit-content;
+  padding-top: 15vh;
+  overflow: hidden;
+}
+.hero-img {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 600px;
+  position: relative;
+}
+.hero-content {
+  position: absolute;
+  top: -1px;
+  left: 10rem;
+  padding: 20px;
+  background-color: #0e0f11;
+  clip-path: polygon(
+    0 0,
+    100% 0%,
+    100% 37%,
+    95% 37%,
+    95% 60%,
+    90% 60%,
+    90% 80%,
+    75% 80%,
+    75% 100%,
+    0 100%
+  );
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.two-cta {
+  gap: var(--gap20);
+}
+.hero-cta {
+  display: flex;
+  height: 25px;
+  width: fit-content;
+  border-radius: 30px;
+  margin-top: 30px;
+  align-self: flex-start;
+}
+.cta1 a {
+  background-color: rgb(41, 41, 41);
+  color: #ffffff;
+  font-size: 16px;
+  border: unset;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  padding: 8px 20px;
+  transition: var(--transition);
+}
+.cta2 a{
+  transition: var(--transition);
+}
+
+
 /* Mobile */
 @media (max-width: 767px) {
 }
@@ -216,6 +284,12 @@ sup {
 
 /* BOTH - MOBILE + TABLET */
 @media (max-width: 1024px) {
+  h1 {
+    line-height: 1;
+    margin-top: 15px;
+    font-size: 8vw;
+    font-weight: 500;
+  }
   .navbar {
     text-align: center;
   }
@@ -225,7 +299,7 @@ sup {
   header {
     background: var(--grey);
     border-radius: 10px;
-    width: 97%;
+    width: 95%;
     margin: auto;
     top: 10px;
   }
@@ -262,7 +336,6 @@ sup {
   .nav-start {
     display: flex;
     height: 25px;
-    background: var(--blue);
     width: fit-content;
     border-radius: 30px;
     margin-top: 30px;
@@ -288,5 +361,20 @@ sup {
     margin-bottom: 20px;
     color: #fff;
     opacity: 0;
+  }
+  .hero-content{
+    left: 0;
+  }
+  .hero-cta:nth-child(2) {
+    display: none;
+  }
+  .hero-img {
+    height: 100%;
+  }
+  .hero img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
   }
 }
