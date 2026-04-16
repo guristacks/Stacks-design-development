@@ -255,6 +255,7 @@ sup {
   height: 100%;
   object-fit: cover;
   object-position: top;
+  filter: brightness(0.7);
 }
 .hero-content {
   position: absolute;
@@ -278,7 +279,7 @@ sup {
   backdrop-filter: blur(5px);
   border-radius: 30px;
   font-size: 12px;
-  background-color: #00000022;
+  background-color: #ffffff22;
   border: 1px solid #ffffff22;
 }
 .cta-set {
