@@ -76,7 +76,7 @@ span {
 }
 section {
   user-select: none;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   color: #fff;
   padding: 50px 0px;
 }
@@ -306,6 +306,48 @@ sup {
 .who-we-are-two-cta {
   margin-top: 30px;
   gap: var(--gap10);
+}
+
+/* SECTION - 3 TRUSTED BRANDS */
+.brandsSec {
+  padding: 50px 0px;
+  text-align: center;
+  height: fit-content;
+  display: block;
+}
+.brandsSec h2 {
+  font-size: clamp(16px, 16px, 16px);
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+.outter {
+  position: relative;
+  overflow: hidden;
+  width: 90vw;
+  margin: auto;
+  padding: 0px 30px;
+}
+.track {
+  display: flex;
+  gap: 50px;
+  width: max-content;
+  position: relative;
+}
+.inner {
+  flex-shrink: 0;
+}
+.inner i {
+  margin-right: 5px;
+  font-size: 20px;
+}
+.inner h3 {
+  font-size: clamp(25px, 5vw, 40px);
+}
+.inner h3:nth-child(2),
+.inner h3:nth-child(4),
+.inner h3:nth-child(6),
+.inner h3:nth-child(8) {
+  font-weight: 400;
 }
 
 /* Mobile */
