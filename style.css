@@ -309,16 +309,11 @@ sup {
 }
 
 /* SECTION - 3 TRUSTED BRANDS */
-.brandsSec {
+.trusted-brands {
   padding: 50px 0px;
   text-align: center;
   height: fit-content;
   display: block;
-}
-.brandsSec h2 {
-  font-size: clamp(16px, 16px, 16px);
-  font-weight: 500;
-  margin-bottom: 35px;
 }
 .outter {
   position: relative;
@@ -336,18 +331,14 @@ sup {
 .inner {
   flex-shrink: 0;
 }
-.inner i {
-  margin-right: 5px;
-  font-size: 20px;
-}
-.inner h3 {
+.inner h2 {
   font-size: clamp(25px, 5vw, 40px);
 }
-.inner h3:nth-child(2),
-.inner h3:nth-child(4),
-.inner h3:nth-child(6),
-.inner h3:nth-child(8) {
-  font-weight: 400;
+.inner h2:nth-child(2),
+.inner h2:nth-child(4),
+.inner h2:nth-child(6),
+.inner h2:nth-child(8) {
+  font-weight: 400 !important;
 }
 
 /* Mobile */
