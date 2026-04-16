@@ -244,6 +244,7 @@ sup {
   height: 100vh;
   overflow: hidden;
   position: relative;
+  border-radius: 0px 0px 20px 20px;
 }
 .hero-video {
   overflow: hidden;
@@ -286,6 +287,27 @@ sup {
   gap: var(--gap10);
 }
 
+/* SECTION - 2 WHO WE ARE */
+.who-we-are {
+  height: fit-content;
+}
+.who-we-are-content {
+  flex-direction: row;
+}
+.who-we-are-content p {
+  width: 100%;
+}
+.who-we-are-content h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.3rem);
+  line-height: 1.25;
+  font-weight: 400;
+  text-align: end;
+}
+.who-we-are-two-cta {
+  margin-top: 30px;
+  gap: var(--gap10);
+}
+
 /* Mobile */
 @media (max-width: 767px) {
   h1 {
@@ -298,6 +320,18 @@ sup {
   }
   .two-cta:nth-child(2) {
     display: none;
+  }
+
+  /* SECTION - 2 WHO WE ARE */
+  .who-we-are-content {
+    flex-direction: column;
+    gap: var(--gap30);
+  }
+  .who-we-are-content h2 {
+    text-align: left;
+  }
+  .who-we-are-two-cta {
+    justify-content: flex-start;
   }
 }
 
