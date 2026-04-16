@@ -45,7 +45,6 @@ body {
 }
 .flex {
   display: flex;
-  align-items: center;
 }
 .f-clmn {
   flex-direction: column;
@@ -294,7 +293,7 @@ sup {
 .who-we-are-content {
   flex-direction: row;
 }
-.who-we-are-content p {
+.title {
   width: 100%;
 }
 .who-we-are-content h2 {
@@ -310,10 +309,7 @@ sup {
 
 /* SECTION - 3 TRUSTED BRANDS */
 .trusted-brands {
-  padding: 50px 0px;
-  text-align: center;
   height: fit-content;
-  display: block;
 }
 .outter {
   position: relative;
@@ -341,6 +337,66 @@ sup {
   font-weight: 400 !important;
 }
 
+/* SECTION - 5 OUR EXPERTISE */
+.our-expertise {
+  height: fit-content;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #1b1b1b;
+}
+.headings {
+  gap: 158px;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+.our-expertise-para {
+  gap: var(--gap30);
+}
+.expertise-cta {
+  width: 100%;
+}
+.our-expertise p {
+  width: 100%;
+}
+.our-expertise h2 {
+  width: 100%;
+  font-size: clamp(2rem, 2.5rem, 2.5rem);
+  text-align: center;
+  font-weight: 500;
+}
+.expertise-left {
+  width: 35%;
+}
+.outter-expertise {
+  width: 100%;
+  gap: var(--gap30);
+}
+.expertises {
+  width: 100%;
+  gap: var(--gap30);
+  align-items: center;
+  border-bottom: 1px solid #4e4e4e;
+  padding-bottom: 30px;
+}
+.expertises img {
+  border-radius: 15px;
+  height: 100px;
+  width: 0;
+  object-fit: cover;
+  transition: var(--transition);
+}
+.expertises h3 {
+  color: #ffffffa4;
+  font-size: 7vw;
+  font-weight: 500;
+  transition: var(--transition);
+}
+.expertises:hover img {
+  width: 120px;
+}
+.expertises:hover h3 {
+  color: #fff;
+}
+
 /* Mobile */
 @media (max-width: 767px) {
   h1 {
@@ -365,6 +421,32 @@ sup {
   }
   .who-we-are-two-cta {
     justify-content: flex-start;
+  }
+
+  /* SECTION - 5 OUR EXPERTISE */
+  .expertise-left {
+    display: none;
+  }
+  .outter-expertise {
+    gap: 0px;
+  }
+  .expertises {
+    width: 100%;
+    gap: var(--gap20);
+    border-bottom: 1px solid #4e4e4e;
+    padding: 20px 0px;
+  }
+  .expertises img {
+    border-radius: 15px;
+    height: 70px;
+    width: 100px;
+    object-fit: cover;
+  }
+  .expertises:hover img {
+    width: 100px;
+  }
+  .expertises h3 {
+    font-size: 8vw;
   }
 }
 
@@ -447,5 +529,16 @@ sup {
   .black-btn,
   .black-icon {
     display: none;
+  }
+
+  /* SECTION - 5 OUR EXPERTISE */
+  .headings {
+    flex-direction: column;
+    gap: var(--gap30);
+  }
+  .our-expertise h2 {
+    width: 100%;
+    font-size: 1.9rem;
+    text-align: left;
   }
 }
