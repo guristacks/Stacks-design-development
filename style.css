@@ -9,7 +9,7 @@
   --lightgrey: #292929;
   --padding-tb-50: 50px 0px;
   --padding-lr-15: 0px 15px;
-
+  --shadow: 2px 2px 10px -5px #000;
   --radius: 30px;
   --transition: 0.3s ease;
 
@@ -82,8 +82,11 @@ section {
 }
 h1 {
   line-height: clamp(1.1, 1, 1);
-  font-size: 5vw;
+  font-size: 6vw;
   font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 10px #ffffffa8;
 }
 h2 {
   font-size: clamp(1.75rem, 3.5vw, 2.8rem);
@@ -116,6 +119,7 @@ img {
   align-items: center;
   padding: 8px 20px;
   transition: var(--transition);
+  box-shadow: var(--shadow);
 }
 .yellow-icon,
 .grey-icon,
@@ -129,6 +133,7 @@ img {
   color: #000000;
 }
 .yellow-icon {
+  color: #000;
   background-color: var(--yellow);
 }
 .grey-btn {
@@ -139,11 +144,12 @@ img {
   background-color: var(--lightgrey);
 }
 .black-btn {
-  background-color: #0e0f11;
+  background-color: transparent;
   color: #ffffff;
+  box-shadow: unset;
 }
 .black-icon {
-  background-color: #0e0f11;
+  background-color: transparent;
 }
 .ri-arrow-right-up-long-fill {
   font-size: 16px;
@@ -237,6 +243,7 @@ sup {
   padding: 0;
   height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 .hero-video {
   overflow: hidden;
@@ -249,23 +256,61 @@ sup {
   object-fit: cover;
   object-position: top;
 }
+.hero-content {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+.hero-content p {
+  width: 60%;
+  margin: auto;
+  color: #ffffffb7;
+  margin-bottom: 20px;
+}
+.hero-content p:nth-child(1) {
+  margin-bottom: 0px;
+  color: var(--yellow);
+  width: fit-content;
+  padding: 8px 15px;
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+  font-size: 12px;
+  background-color: #00000022;
+  border: 1px solid #ffffff22;
+}
+.cta-set {
+  gap: var(--gap10);
+}
 
 /* Mobile */
 @media (max-width: 767px) {
+  h1 {
+    line-height: 1.2;
+    font-size: 10vw;
+    font-weight: 500;
+  }
+  .hero-content p {
+    width: 100%;
+  }
+  .two-cta:nth-child(2) {
+    display: none;
+  }
 }
 
 /* Tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    line-height: 1.2;
+    font-size: 8vw;
+    font-weight: 500;
+  }
 }
 
 /* BOTH - MOBILE + TABLET */
 @media (max-width: 1024px) {
-  h1 {
-    line-height: 1;
-    margin-top: 15px;
-    font-size: 8vw;
-    font-weight: 500;
-  }
   .navbar {
     text-align: center;
   }
@@ -328,5 +373,11 @@ sup {
     margin-bottom: 20px;
     color: #fff;
     opacity: 0;
+  }
+
+  /* SECTION - 1 HERO */
+  .black-btn,
+  .black-icon {
+    display: none;
   }
 }
