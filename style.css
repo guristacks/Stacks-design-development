@@ -321,14 +321,19 @@ sup {
 }
 .track {
   display: flex;
-  gap: 50px;
+  gap: 100px;
   width: max-content;
   position: relative;
 }
 .inner {
   flex-shrink: 0;
 }
-.inner h2 {
+.inner img{
+  width: 100%;
+  height: 50px;
+  object-fit: cover;
+}
+/* .inner h2 {
   font-size: clamp(25px, 5vw, 40px);
 }
 .inner p {
@@ -341,7 +346,7 @@ sup {
 .inner h2:nth-child(6),
 .inner h2:nth-child(8) {
   font-weight: 400 !important;
-}
+} */
 
 /* SECTION - 5 OUR EXPERTISE */
 .our-expertise {
