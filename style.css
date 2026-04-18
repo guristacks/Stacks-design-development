@@ -572,6 +572,7 @@ sup {
   }
   .nav-links {
     padding: 0px 5px;
+    gap: 0px;
     background-color: #ffffff1a;
     backdrop-filter: blur(10px);
     position: absolute;
@@ -593,8 +594,8 @@ sup {
   .nav-links li a {
     display: inline-block;
     font-size: 50px;
+    padding: 8px 0px;
     font-weight: 400;
-    padding: 0;
     opacity: 0;
     line-height: 30px;
   }

@@ -195,7 +195,7 @@ const mobileNavBarAnimation = () => {
 const trustedBrandsAnimation = () => {
   if (window.innerWidth > 1024) {
     gsap.to(".track", {
-      x: "-90%",
+      x: "-70%",
       duration: 60,
       repeat: -1,
       yoyo: true,
