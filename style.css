@@ -577,10 +577,25 @@ sup {
 }
 
 /* SECTION - 10 AI */
-.ai-about-us{
+.ai-about-us {
   min-height: 90vh;
   display: flex;
   position: relative;
+}
+.ai-img {
+  position: absolute;
+  object-fit: cover;
+  width: fit-content;
+  height: fit-content;
+  opacity: 0.8;
+  top: 0;
+  right: 20px;
+}
+.ai-img img {
+  width: 100px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
 }
 .ai-content {
   align-items: center;
@@ -641,9 +656,9 @@ sup {
   .four-cta {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center; 
+    justify-items: center;
   }
-  .two-cta{
+  .two-cta {
     display: flex !important;
   }
 }
