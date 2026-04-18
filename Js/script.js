@@ -212,8 +212,10 @@ const trustedBrandsAnimation = () => {
   }
 };
 
+
 // lenisAnimation();
 
 mobileNavBarAnimation();
 
 trustedBrandsAnimation();
+
