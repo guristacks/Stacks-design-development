@@ -83,10 +83,10 @@ section {
 h1 {
   line-height: clamp(1.1, 1, 1);
   font-size: 6vw;
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 15px;
   margin-bottom: 15px;
-  text-shadow: 1px 1px 10px #ffffffa8;
+  text-shadow: 1px 1px 10px #ffffff48;
 }
 h2 {
   font-size: clamp(1.75rem, 3.5vw, 2.8rem);
@@ -253,6 +253,9 @@ nav {
   justify-content: flex-end;
 }
 .nav-right:hover .yellow-icon {
+  transform: rotate(45deg);
+}
+.nav-start:hover .yellow-icon {
   transform: rotate(45deg);
 }
 sup {
@@ -563,12 +566,14 @@ sup {
     display: flex;
   }
   header {
-    background: var(--grey);
+    background: #000;
     backdrop-filter: unset;
     border-radius: 10px;
     width: 95%;
     margin: auto;
+    padding: 0px 5px;
     top: 10px;
+    box-shadow: 0px 0px 12px -10px #fff;
   }
   .nav-links {
     padding: 0px 5px;
