@@ -78,7 +78,7 @@ const mobileNavBarAnimation = () => {
     let tl1 = gsap.timeline();
 
     tl1.to(nav, {
-      height: "450px",
+      height: "480px",
       paddingBottom: "50px",
       duration: 0.1,
       ease: "none",
