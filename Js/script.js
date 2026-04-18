@@ -212,10 +212,51 @@ const trustedBrandsAnimation = () => {
   }
 };
 
-
 // lenisAnimation();
 
 mobileNavBarAnimation();
 
 trustedBrandsAnimation();
 
+const slider = document.getElementById("blogSlider");
+const leftBtn = document.querySelector(".arrow.left");
+const rightBtn = document.querySelector(".arrow.right");
+
+const scrollAmount = slider.querySelector(".blog").offsetWidth + 20;
+
+let currentIndex = 0;
+const totalCards = slider.querySelectorAll(".blog").length;
+const visibleCards = 2;
+
+function updateArrows() {
+  if (currentIndex === 0) {
+    leftBtn.classList.add("disabled");
+  } else {
+    leftBtn.classList.remove("disabled");
+  }
+
+  if (currentIndex >= totalCards - visibleCards) {
+    rightBtn.classList.add("disabled");
+  } else {
+    rightBtn.classList.remove("disabled");
+  }
+}
+
+rightBtn.addEventListener("click", () => {
+  if (currentIndex < totalCards - visibleCards) {
+    currentIndex++;
+    slider.scrollBy({ left: scrollAmount, behavior: "smooth" });
+  }
+  updateArrows();
+});
+
+leftBtn.addEventListener("click", () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    slider.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+  }
+  updateArrows();
+});
+
+// init
+updateArrows();
