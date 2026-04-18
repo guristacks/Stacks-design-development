@@ -85,8 +85,8 @@ h2 {
   font-weight: 500;
 }
 h3 {
-  font-size: clamp(1.5rem, 3vw, 2.2rem);
-  line-height: 1.1;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  line-height: 1.2;
 }
 h4 {
   font-size: clamp(1.25rem, 2.5vw, 1.8rem);
@@ -422,17 +422,17 @@ sup {
   align-items: center;
 }
 .google h3 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
 }
-.g-stars{
+.g-stars {
   gap: var(--gap10);
 }
 .g-stars img {
-  width: 100px;
+  width: 90px;
   object-fit: cover;
 }
-.stars{
+.stars {
   color: goldenrod;
 }
 
@@ -576,6 +576,28 @@ sup {
   transform: rotate(45deg);
 }
 
+/* SECTION - 10 AI */
+.ai-about-us{
+  min-height: 90vh;
+  display: flex;
+  position: relative;
+}
+.ai-content {
+  align-items: center;
+  gap: var(--gap10);
+}
+.ai-content h2 {
+  font-size: clamp(1.75rem, 5vw, 3.4rem);
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.ai-content p {
+  text-align: center;
+}
+.four-cta {
+  gap: var(--gap10);
+}
+
 /* Mobile */
 @media (max-width: 767px) {
   h1 {
@@ -606,13 +628,23 @@ sup {
   .work img {
     height: 260px;
   }
-  .google .two-cta{
+  .google .two-cta {
     display: flex;
   }
 
   /* SECTION - 7 ABOUT US */
   .about-right p {
     font-size: 16px;
+  }
+
+  /* SECTION - 10 AI */
+  .four-cta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center; 
+  }
+  .two-cta{
+    display: flex !important;
   }
 }
 
