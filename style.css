@@ -576,6 +576,71 @@ sup {
   transform: rotate(45deg);
 }
 
+/* SECTION - 9 BLOGS */
+.blogs {
+  padding-bottom: 100px;
+}
+.blog-section {
+  gap: 40px;
+}
+.blog-left {
+  width: 20%;
+  gap: var(--gap20);
+}
+.blog-left h2 {
+  font-size: 40px;
+}
+.blog-right {
+  width: 80%;
+  overflow: hidden;
+  gap: 20px;
+}
+.blog {
+  min-width: calc(45% - 0px);
+  flex-shrink: 0;
+  width: 45%;
+}
+.blog img {
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+.blog h3 {
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 1.1;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.blog p {
+  color: var(--fade-p);
+}
+.blog-right::after {
+  content: "";
+  min-width: 10%;
+}
+.blog-arrows {
+  margin-top: 30px;
+  gap: var(--gap10);
+}
+.arrow {
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  background: var(--lightgrey);
+  border: unset;
+}
+.arrow.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 /* SECTION - 10 AI */
 .ai-about-us {
   min-height: 90vh;
@@ -690,6 +755,40 @@ sup {
     font-size: 16px;
   }
 
+  /* SECTION - 9 BLOGS */
+  .blog-section {
+    flex-direction: column;
+  }
+  .blog-left {
+    width: 100%;
+    gap: var(--gap10);
+  }
+  .blog-left h2 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .blog h3 {
+    font-size: 25px;
+  }
+  .blog-right {
+    width: 100%;
+  }
+  .blog {
+    width: 90%;
+  }
+  .blog img {
+    height: 200px;
+  }
+  .arrow-cta {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .blog-arrows {
+    margin: 0;
+  }
+
   /* SECTION - 10 AI */
   .four-cta {
     display: grid;
@@ -714,6 +813,7 @@ sup {
     height: 100px;
     object-fit: cover;
     border-radius: 20px;
+    opacity: 0.7;
   }
   .ai-2 {
     top: 0;
@@ -756,6 +856,39 @@ sup {
   .work img {
     height: 400px;
   }
+
+  
+  /* SECTION - 9 BLOGS */
+  .blog-section {
+    flex-direction: column;
+  }
+  .blog-left {
+    width: 100%;
+    gap: var(--gap10);
+  }
+  .blog-left h2 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .blog-right{
+    width: 100%;
+  }
+  .blog{
+    width: 90%;
+  }
+  .blog img{
+    height: 300px;
+  }
+  .arrow-cta{
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .blog-arrows{
+    margin: 0;
+  }
+
 
   /* SECTION - 10 AI */
   .ai-1 img {
