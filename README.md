@@ -2,7 +2,7 @@
 
 **Stacks** is a modern web design and development company based in India, focused on building high-performance digital experiences that help businesses grow, scale, and stand out in the digital world.
 
-We combine creativity with cutting-edge technology to deliver products that are not just visually appealing, but also functional, scalable, and user-focused.
+We combine creativity with cutting-edge technology to deliver products that are not just visually appealing, but also functional, scalable, and user-focused. 
 
 ---
 
