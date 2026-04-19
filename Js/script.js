@@ -259,3 +259,17 @@ leftBtn.addEventListener("click", () => {
 });
 
 updateArrows();
+
+gsap.to(".marquee-top .TRACKING", {
+  xPercent: -20,
+  duration: 20,
+  repeat: -1,
+  ease: "linear",
+});
+
+gsap.to(".marquee-bottom .TRACKING", {
+  xPercent: 20,
+  duration: 20,
+  repeat: -1,
+  ease: "linear",
+});
