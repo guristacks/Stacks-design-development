@@ -258,5 +258,4 @@ leftBtn.addEventListener("click", () => {
   updateArrows();
 });
 
-// init
 updateArrows();
