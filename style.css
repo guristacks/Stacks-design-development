@@ -541,7 +541,34 @@ sup {
   width: 100%;
 }
 
-/* SECTION - 7 SHARING THE LOVE */
+/* SECTION - 6 LETS WORK TOGETHER */
+.marquee-section {
+  overflow: hidden;
+}
+
+.marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.TRACKING {
+  display: flex;
+  gap: 60px;
+  width: max-content;
+}
+
+.TRACKING h2 {
+  font-size: 80px;
+  white-space: nowrap;
+}
+
+.TRACKING a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+/* SECTION - 7 BLOGS */
 .about-row {
   gap: var(--gap50);
 }
@@ -781,7 +808,7 @@ sup {
     min-width: 100%;
     width: 100%;
   }
-  .blog:nth-child(6){
+  .blog:nth-child(6) {
     display: none;
   }
   .blog img {
