@@ -261,15 +261,17 @@ leftBtn.addEventListener("click", () => {
 updateArrows();
 
 gsap.to(".marquee-top .TRACKING", {
-  xPercent: -20,
-  duration: 20,
+  transform: "translateX(0%)",
+  duration: 60,
   repeat: -1,
+  yoyo: true,
   ease: "linear",
 });
 
 gsap.to(".marquee-bottom .TRACKING", {
-  xPercent: 20,
-  duration: 20,
+  transform: "translateX(-84%)",
+  duration: 60,
   repeat: -1,
+  yoyo: true,
   ease: "linear",
 });
