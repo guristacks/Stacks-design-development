@@ -674,6 +674,7 @@ sup {
   display: flex;
   position: relative;
   overflow: hidden;
+  margin-bottom: 50px;
 }
 .ai-img {
   position: absolute;
@@ -722,7 +723,7 @@ sup {
   transform: rotate(-20deg);
 }
 .ai-4 {
-  bottom: 0;
+  bottom: 5%;
   left: 10%;
   opacity: 0.7;
 }
@@ -744,6 +745,97 @@ sup {
 }
 .four-cta i {
   margin-right: 5px;
+}
+
+/* FOOTER */
+footer {
+  background: #1a1b1e;
+  padding: 50px 0px;
+  border-radius: 20px 20px 0px 0px;
+  color: #fff;
+  user-select: none;
+}
+.shit p,
+.on-mobile p {
+  background-color: #0e0f11;
+  padding: 10px 20px;
+  border-radius: 50px;
+  width: fit-content;
+  font-size: 14px;
+}
+.shit {
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+.five-row {
+  margin-bottom: 50px;
+}
+.social-icons {
+  width: fit-content;
+  padding: 20px 10px;
+  gap: var(--gap10);
+  background-color: #0e0f11;
+  border-radius: 50px;
+  height: fit-content;
+}
+.social-icons i {
+  font-size: 16px;
+  background-color: var(--yellow);
+  padding: 5px;
+  border-radius: 50%;
+  color: #000;
+}
+.like,
+.like-us {
+  gap: var(--gap20);
+}
+.like {
+  width: 33%;
+}
+.like-us {
+  width: 100%;
+}
+.like h2 {
+  font-size: 35px;
+  line-height: 1.3;
+}
+.review-count p {
+  color: var(--fade-p);
+  font-size: 10px;
+}
+.logo-stars img {
+  height: 100%;
+  width: 40px;
+}
+.uls {
+  gap: 90px;
+}
+.learn p,
+.explore p,
+.touch h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.learn,
+.explore {
+  line-height: 30px;
+}
+.learn li a,
+.explore li a,
+.touch p,
+.touch i {
+  color: var(--fade-p);
+  font-size: 14px;
+}
+.touch {
+  gap: var(--gap10);
+}
+footer h3 {
+  font-size: 9vw;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 500;
 }
 
 /* Mobile */
@@ -785,8 +877,11 @@ sup {
     gap: 30px;
   }
   .TRACKING h2 {
-    font-size: 40px;
+    font-size: 45px;
     line-height: 1.3;
+  }
+  .marquee-top {
+    margin-bottom: 10px;
   }
   .TRACKING h2 i {
     font-size: 30px;
@@ -888,6 +983,13 @@ sup {
     bottom: 0;
     left: 0;
     opacity: 0.7;
+  }
+
+  /* FOOTER */
+  .on-mobile {
+    flex-direction: column;
+    align-items: self-start;
+    gap: 20px;
   }
 }
 
@@ -1139,5 +1241,29 @@ sup {
     margin: 0;
     width: 100%;
     margin-bottom: 30px;
+  }
+
+  /* FOOTER */
+  .shit {
+    display: none;
+  }
+  .social-icons {
+    gap: 13px;
+  }
+  .five-row {
+    flex-direction: column;
+  }
+  .cta-review {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .like {
+    width: 100%;
+    gap: var(--gap30);
+  }
+  .uls {
+    margin: 30px 0px;
+    gap: 50px;
   }
 }
