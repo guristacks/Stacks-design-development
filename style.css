@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 :root {
   --yellow: #d0ff71;
@@ -104,19 +105,19 @@ img {
 .yellow-btn,
 .grey-btn,
 .black-btn {
-  font-size: 16px;
+  font-size: 14px;
   border: unset;
   border-radius: var(--radius);
   display: flex;
   align-items: center;
-  padding: 8px 20px;
+  padding: 8px 15px;
   transition: var(--transition);
   box-shadow: var(--shadow);
 }
 .yellow-icon,
 .grey-icon,
 .black-icon {
-  padding: 8px 12px !important;
+  padding: 7px 11px !important;
   border-radius: 50% !important;
   margin-left: -6px;
   transition: var(--transition);
@@ -135,14 +136,6 @@ img {
 }
 .grey-icon {
   background-color: var(--lightgrey);
-}
-.black-btn {
-  background-color: transparent;
-  color: #ffffff;
-  box-shadow: unset;
-}
-.black-icon {
-  background-color: transparent;
 }
 .ri-arrow-right-up-long-line {
   font-size: 16px;
@@ -794,15 +787,17 @@ footer {
 .like-us {
   gap: var(--gap20);
 }
-.like {
-  width: 33%;
-}
 .like-us {
   width: 100%;
 }
 .like h2 {
   font-size: 35px;
   line-height: 1.3;
+}
+.cta-review {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap20);
 }
 .review-count p {
   color: var(--fade-p);
@@ -841,6 +836,19 @@ footer h3 {
   margin-bottom: 50px;
   text-align: center;
   font-weight: 500;
+}
+.on-mobile {
+  display: none;
+}
+.last-main {
+  gap: var(--gap10);
+}
+.last1 {
+  gap: var(--gap20);
+  align-items: baseline;
+}
+.last1 p {
+  color: var(--fade-p);
 }
 
 /* Mobile */
@@ -992,8 +1000,17 @@ footer h3 {
 
   /* FOOTER */
   .on-mobile {
-    flex-direction: column;
     gap: 20px;
+    margin-top: 20px;
+  }
+  .on-mobile p {
+    font-size: 11px;
+  }
+  .last1 {
+    gap: 5px;
+  }
+  .last1 p {
+    font-size: 12px;
   }
 }
 
@@ -1085,6 +1102,11 @@ footer h3 {
     left: 0;
     opacity: 0.7;
   }
+
+  /* FOOTER */
+  .on-mobile {
+    margin-top: 20px;
+  }
 }
 
 /* BOTH - MOBILE + TABLET */
@@ -1154,12 +1176,6 @@ footer h3 {
     margin-bottom: 20px;
     color: #fff;
     opacity: 0;
-  }
-
-  /* SECTION - 1 HERO */
-  .black-btn,
-  .black-icon {
-    display: none;
   }
 
   /* SECTION - 4 OUR WORK */
@@ -1248,6 +1264,9 @@ footer h3 {
   }
 
   /* FOOTER */
+  .on-mobile {
+    display: flex;
+  }
   .shit {
     display: none;
   }
@@ -1271,6 +1290,9 @@ footer h3 {
     gap: 50px;
   }
   footer h3 {
+    display: none;
+  }
+  .last1 h4 {
     display: none;
   }
 }
