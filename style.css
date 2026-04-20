@@ -751,7 +751,7 @@ footer {
 .shit p,
 .on-mobile p {
   background-color: #0e0f11;
-  padding: 10px 20px;
+  padding: 10px 15px;
   border-radius: 50px;
   width: fit-content;
   font-size: 14px;
@@ -805,7 +805,8 @@ footer {
 }
 .logo-stars img {
   height: 100%;
-  width: 40px;
+  width: 58px;
+  margin-right: 7px;
 }
 .uls {
   gap: 90px;
@@ -1011,6 +1012,7 @@ footer h3 {
   }
   .last1 p {
     font-size: 12px;
+    width: fit-content;
   }
 }
 
