@@ -811,8 +811,7 @@ footer {
 .uls {
   gap: 90px;
 }
-.learn p,
-.explore p,
+.li-heading,
 .touch h4 {
   font-size: 18px;
   margin-bottom: 15px;
@@ -1169,6 +1168,17 @@ footer h3 {
     margin-top: 30px;
     align-self: flex-start;
     opacity: 0;
+  }
+  .nav-start a {
+    font-size: 14px !important;
+    color: #000 !important;
+  }
+  .nav-start .yellow-btn {
+    padding: 7px 20px;
+    font-weight: 400;
+  }
+  .nav-start .yellow-icon {
+    padding: 7px 14px !important;
   }
   .look {
     display: flex;
