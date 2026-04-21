@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-display: swap;
 }
 :root {
   --yellow: #d0ff71;
@@ -26,7 +27,7 @@ a {
   color: unset;
 }
 body {
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #0e0f11;
 }
 .container {
@@ -272,6 +273,8 @@ sup {
   border-radius: 0px 0px 20px 20px;
 }
 .hero-image {
+  aspect-ratio: 16/9;
+  width: 100%;
   overflow: hidden;
   height: 100%;
   position: relative;
@@ -545,11 +548,13 @@ sup {
 }
 .marquee {
   overflow: hidden;
+  white-space: nowrap;
   width: 100%;
 }
 .TRACKING {
   gap: 60px;
   width: max-content;
+  will-change: transform;
   padding-bottom: 3px;
 }
 .TRACKING h2 {
