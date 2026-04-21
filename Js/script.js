@@ -27,7 +27,7 @@ const lenisAnimation = () => {
 
   const initLenis = () => {
     if (window.innerWidth > 1024 && !lenis) {
-      lenis = new Lenis({ duration: 2 });
+      lenis = new Lenis();
 
       lenis.on("scroll", ScrollTrigger.update);
 
@@ -258,7 +258,7 @@ const blogAnimation = () => {
 
 const letsworkAnimation = () => {
   gsap.to(".marquee-top .TRACKING", {
-    transform: "translateX(0%)",
+    xPercent: 84,
     duration: 60,
     repeat: -1,
     yoyo: true,
@@ -266,7 +266,7 @@ const letsworkAnimation = () => {
   });
 
   gsap.to(".marquee-bottom .TRACKING", {
-    transform: "translateX(-84%)",
+    xPercent: -84,
     duration: 60,
     repeat: -1,
     yoyo: true,
