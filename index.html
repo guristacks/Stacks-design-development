@@ -76,33 +76,41 @@
     <header class="flex ac" role="banner">
         <nav aria-label="Main Navigation" class="navbar flex ac sb">
             <div class="nav-left">
-                <a href="index.html" class="logo">Stacks.</a>
+                <a href="index.html" class="logo" aria-label="Stacks Home"></a>>Stacks.</a>
             </div>
 
             <ul class="nav-links flex ac">
                 <li class="look">
                     <p>• Have a look around...</p>
                 </li>
-                <li><a class="links" href="#HERO">Services <sup>13</sup></a></li>
-                <li><a class="links" href="#HERO">Work</a></li>
-                <li><a class="links" href="#HERO">About</a></li>
-                <li><a class="links" href="#HERO">Blog</a></li>
-                <li><a class="links" href="#HERO">Contact</a></li>
+                <li><a class="links" href="#SERVICES">Services <sup>13</sup></a></li>
+                <li><a class="links" href="#WORK">Work</a></li>
+                <li><a class="links" href="#ABOUT">About</a></li>
+                <li><a class="links" href="#BLOG">Blog</a></li>
+                <li><a class="links" href="#CONTACT">Contact</a></li>
 
                 <li class="nav-start flex ac">
-                    <a class="yellow-btn" href="#HERO">Start a project</a>
-                    <a class="yellow-icon" href="#HERO"><i aria-hidden="true"
+                    <a class="yellow-btn" href="#CONTACT">Start a project</a>
+                    <a class="yellow-icon" href="#CONTACT"><i aria-hidden="true"
                             class="ri-arrow-right-up-long-line"></i></a>
                 </li>
             </ul>
 
             <div class="nav-right flex ac">
-                <a class="yellow-btn" href="#HERO">Start a project</a>
-                <a class="yellow-icon" href="#HERO"><i aria-hidden="true" class="ri-arrow-right-up-long-line"></i></a>
+                <a class="yellow-btn" href="#CONTACT">Start a project</a>
+                <a class="yellow-icon" href="#CONTACT"><i aria-hidden="true" class="ri-arrow-right-up-long-line"></i></a>
             </div>
 
-            <div class="ham"><i aria-label="Open menu" class="ri-menu-3-line"></i></div>
-            <div class="close hide"><i aria-hidden="true" class="ri-close-large-line"></i></div>
+            <div class="ham">
+                <button aria-label="Open menu">
+                    <i class="ri-menu-3-line" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="close hide">
+                <button aria-label="Close menu">
+                    <i class="ri-close-large-line" aria-hidden="true"></i>
+                </button>
+            </div>
         </nav>
     </header>
 
@@ -110,7 +118,7 @@
     <main role="main">
         <section id="HERO" class="hero">
             <div class="hero-image">
-                <img src="Images/Hero/hero-bg.webp" loading="eager" fetchpriority="high"
+                <img src="Images/Hero/hero-bg.webp" loading="eager" fetchpriority="high" width="1920" height="1080"
                     alt="Main background hero image">
             </div>
             <div class="container">
@@ -126,7 +134,7 @@
                                     class="ri-arrow-right-up-long-line"></i></a>
                         </div>
                         <div class="two-cta flex ac">
-                            <a href="#HERO" class="grey-btn">View our work</a>
+                            <a href="#HERO" class="grey-btn">Get in touch</a>
                             <a href="#HERO" class="grey-icon"><i aria-hidden="true"
                                     class="ri-arrow-right-up-long-line"></i></a>
                         </div>
@@ -216,7 +224,7 @@
             </div>
         </section>
 
-        <section class="our-work">
+        <section id="WORK" class="our-work">
             <div class="container">
                 <div class="main-work flex sb">
                     <div class="work-left flex f-clmn">
@@ -321,7 +329,7 @@
             </div>
         </section>
 
-        <section class="our-expertise">
+        <section id="SERVICES" class="our-expertise">
             <div class="container">
 
                 <div class="headings flex sb">
@@ -332,8 +340,8 @@
                         <p>We are a digital marketing agency with expertise, and we’re on a mission to help you take the
                             next step in your business.</p>
                         <div class="two-cta flex ac">
-                            <a class="yellow-btn" href="#HERO">See all services</a>
-                            <a class="yellow-icon" href="#HERO"><i aria-hidden="true"
+                            <a class="yellow-btn" href="#SERVICES">See all services</a>
+                            <a class="yellow-icon" href="#SERVICES"><i aria-hidden="true"
                                     class="ri-arrow-right-up-long-line"></i></a>
                         </div>
                     </div>
@@ -381,7 +389,7 @@
             </div>
         </section>
 
-        <section class="about-us">
+        <section id="ABOUT" class="about-us">
             <div class="container">
                 <div class="about-row flex sb">
                     <div class="about-left flex f-clmn">
@@ -505,7 +513,7 @@
             </div>
         </section>
 
-        <section class="blogs">
+        <section id="Blog" class="blogs">
             <div class="container">
                 <div class="blog-section flex">
 
@@ -638,7 +646,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer role="contentinfo">
+    <footer id="CONTACT" role="contentinfo">
         <div class="container">
 
             <div class="shit flex">
