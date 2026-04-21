@@ -68,7 +68,7 @@ main {
 }
 section {
   user-select: none;
-  /* min-height: 100vh; */
+  overflow: hidden;
   color: #fff;
   padding: 50px 0px;
 }
