@@ -21,21 +21,13 @@
     <meta property="og:description"
         content="We design and develop high-performance websites, apps, and digital experiences for modern brands. 550+ clients trust Stacks." />
     <meta property="og:type" content="website" />
-    <!-- <meta property="og:image" content="https://stacks-design-development.vercel.app/preview.jpg" /> -->
     <meta property="og:url" content="https://stacks-design-development.vercel.app/" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Stacks – Web Design & Development Agency" />
-    <meta name="twitter:description"
-        content="Build fast, modern, and scalable digital products with Stacks. Web, apps, UI/UX, and SEO services." />
-    <!-- <meta name="twitter:image" content="https://stacks-design-development.vercel.app/preview.jpg" /> -->
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://stacks-design-development.vercel.app/" />
 
     <!-- Favicon -->
-    <!-- <link rel="icon" type="image/WEBP" href="Images/Guri.WEBP" /> -->
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
 
     <!-- POPPINS Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,12 +40,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Performance: Preload Hero Images -->
-    <!-- <link rel="preload" as="image" href="Images/Hero/hero-1-desk.webp" media="(min-width: 481px)">
-    <link rel="preload" as="image" href="Images/Hero/hero-1-phn.webp" media="(max-width: 480px)"> -->
-
-    <!-- Preconnect for Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="image" href="Images/Hero/hero-bg.webp">
 
     <!-- CSS -->
     <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
@@ -102,8 +89,7 @@
     <main role="main">
         <section id="HERO" class="hero">
             <div class="hero-image">
-                <img fetchpriority="high" src="https://images.pexels.com/photos/18541719/pexels-photo-18541719.jpeg"
-                    alt="Hero image">
+                <img fetchpriority="high" src="Images/Hero/hero-bg.webp" alt="Hero image">
             </div>
             <div class="container">
                 <div class="hero-content">
@@ -224,7 +210,14 @@
                                 <p>Website </p>
                                 <p>SEO</p>
                             </div>
-                            <a href="#HERO"><img loading="lazy" src="Images/Work/work-1.webp" alt="Project image"></a>
+                            <a href="#HERO">
+                                <img src="Images/Work/work-1.webp" srcset="
+                                    Images/Work/work-1.webp 400w,
+                                    Images/Work/work-1.webp 800w,
+                                    Images/Work/work-1.webp 1200w
+                                    " sizes="(max-width: 768px) 100vw, 50vw" width="685" height="457" loading="lazy"
+                                    alt="Project image">
+                            </a>
                             <p><a href="#HERO">2023 • Gary Neville</a></p>
                             <h3><a href="#HERO">Refreshing Gary <br> Neville's digital presence</a></h3>
                         </div>
@@ -234,7 +227,14 @@
                                 <p>SEO</p>
                                 <p>Brand Repositioning</p>
                             </div>
-                            <a href="#HERO"><img loading="lazy" src="Images/Work/work-2.webp" alt="Project image"></a>
+                            <a href="#HERO">
+                                <img src="Images/Work/work-2.webp" srcset="
+                                    Images/Work/work-2.webp 400w,
+                                    Images/Work/work-2.webp 800w,
+                                    Images/Work/work-2.webp 1200w
+                                    " sizes="(max-width: 768px) 100vw, 50vw" width="685" height="457" loading="lazy"
+                                    alt="Project image">
+                            </a>
                             <p><a href="#HERO">2024 • Sketch Studios</a></p>
                             <h3><a href="#HERO">A workplace consultancy <br> creating inspiring environments</a></h3>
                         </div>
@@ -246,7 +246,14 @@
                                 <p>Shopify</p>
                                 <p>Website </p>
                             </div>
-                            <a href="#HERO"><img loading="lazy" src="Images/Work/work-3.webp" alt="Project image"></a>
+                            <a href="#HERO">
+                                <img src="Images/Work/work-3.webp" srcset="
+                                    Images/Work/work-3.webp 400w,
+                                    Images/Work/work-3.webp 800w,
+                                    Images/Work/work-3.webp 1200w
+                                    " sizes="(max-width: 768px) 100vw, 50vw" width="685" height="457" loading="lazy"
+                                    alt="Project image">
+                            </a>
                             <p><a href="#HERO">2024 • Nth Degree</a></p>
                             <h3><a href="#HERO">Furniture designed to <br> the greatest extent</a></h3>
                         </div>
@@ -256,7 +263,14 @@
                                 <p>Website </p>
                                 <p>SEO</p>
                             </div>
-                            <a href="#HERO"><img loading="lazy" src="Images/Work/work-4.webp" alt="Project image"></a>
+                            <a href="#HERO">
+                                <img src="Images/Work/work-4.webp" srcset="
+                                    Images/Work/work-4.webp 400w,
+                                    Images/Work/work-4.webp 800w,
+                                    Images/Work/work-4.webp 1200w
+                                    " sizes="(max-width: 768px) 100vw, 50vw" width="685" height="457" loading="lazy"
+                                    alt="Project image">
+                            </a>
                             <p><a href="#HERO">2024 • YMC</a></p>
                             <h3><a href="#HERO">Redefining a leading <br> global talent group</a></h3>
                         </div>
