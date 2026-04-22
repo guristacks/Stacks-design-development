@@ -105,11 +105,15 @@ img {
 button {
   border: none;
   cursor: pointer;
+  transition: var(--transition);
+}
+button:active {
+  transform: scale(0.95);
 }
 .yellow-btn,
 .grey-btn,
 .black-btn {
-  font-size: 14px;
+  font-size: 16px;
   border: unset;
   border-radius: var(--radius);
   display: flex;
@@ -143,7 +147,7 @@ button {
   background-color: var(--lightgrey);
 }
 .ri-arrow-right-up-long-line {
-  font-size: 16px;
+  font-size: 17px;
 }
 
 @media (min-width: 1024px) {
