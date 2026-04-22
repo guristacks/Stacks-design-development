@@ -317,5 +317,45 @@ const mainAnime = () => {
   });
 };
 
+const whoWeAreSecAnime = () => {
+  
+  gsap.from(".who-we-are-content .title", {
+    opacity: 0,
+    y: 30,
+    scrollTrigger: {
+      trigger: ".who-we-are-content",
+      scroller: "body",
+      start: "top 80%",
+      end: "top 40%",
+      scrub: 1,
+    },
+  });
+
+  gsap.from(".who-we-are-content h2", {
+    opacity: 0,
+    y: 30,
+    scrollTrigger: {
+      trigger: ".who-we-are-content",
+      scroller: "body",
+      start: "top 80%",
+      end: "top 40%",
+      scrub: 1,
+    },
+  });
+
+  gsap.from(".who-we-are-two-cta", {
+    opacity: 0,
+    y: 30,
+    scrollTrigger: {
+      trigger: ".who-we-are-content",
+      scroller: "body",
+      start: "top 60%",
+      end: "top 20%",
+      scrub: 1,
+    },
+  });
+};
+
 mainAnime();
 
+whoWeAreSecAnime();
