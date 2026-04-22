@@ -356,6 +356,59 @@ const whoWeAreSecAnime = () => {
   });
 };
 
+const workSecAnime = () => {
+  
+  gsap.from(".work-title .title", {
+    opacity: 0,
+    y: 30,
+    scrollTrigger: {
+      trigger: ".work-title",
+      scroller: "body",
+      start: "top 80%",
+      end: "top 40%",
+      scrub: 1,
+    },
+  });
+
+  gsap.from(".work-title h2", {
+    opacity: 0,
+    y: 30,
+    scrollTrigger: {
+      trigger: ".work-title",
+      scroller: "body",
+      start: "top 80%",
+      end: "top 40%",
+      scrub: 1,
+    },
+  });
+
+  gsap.from(".work-left .work", {
+    opacity: 0,
+    y: 30,
+    scrollTrigger: {
+      trigger: ".work-left",
+      scroller: "body",
+      start: "top 50%",
+      end: "top 30%",
+      scrub: 1,
+    },
+  });
+
+  gsap.from(".work-right", {
+    opacity: 0,
+    y: 30,
+    scrollTrigger: {
+      trigger: ".work-right",
+      scroller: "body",
+      start: "top 80%",
+      end: "top 40%",
+      scrub: 1,
+    },
+  });
+};
+
 mainAnime();
 
 whoWeAreSecAnime();
+
+workSecAnime();
