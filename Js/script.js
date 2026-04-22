@@ -283,3 +283,39 @@ trustedBrandsAnimation();
 blogAnimation();
 
 letsworkAnimation();
+
+const mainAnime = () => {
+  tl.from("header", {
+    delay: 0.5,
+    y: -20,
+    duration: 0.3,
+    opacity: 0,
+  });
+
+  tl.from(".hero-content .hey", {
+    y: 20,
+    duration: 0.2,
+    opacity: 0,
+  });
+
+  tl.from(".hero-content h1", {
+    y: 20,
+    duration: 0.2,
+    opacity: 0,
+  });
+
+  tl.from(".hero-content .hero-des", {
+    y: 20,
+    duration: 0.2,
+    opacity: 0,
+  });
+
+  tl.from(".hero-content .cta-set", {
+    y: 20,
+    duration: 0.2,
+    opacity: 0,
+  });
+};
+
+mainAnime();
+
