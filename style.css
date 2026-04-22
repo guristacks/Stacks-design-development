@@ -102,6 +102,10 @@ img {
   max-width: 100%;
   display: block;
 }
+button {
+  border: none;
+  cursor: pointer;
+}
 .yellow-btn,
 .grey-btn,
 .black-btn {
@@ -117,7 +121,7 @@ img {
 .yellow-icon,
 .grey-icon,
 .black-icon {
-  padding: 7px 11px !important;
+  padding: 8px 8px !important;
   border-radius: 50% !important;
   margin-left: -6px;
   transition: var(--transition);
@@ -135,6 +139,7 @@ img {
   color: #ffffff;
 }
 .grey-icon {
+  color: #fff;
   background-color: var(--lightgrey);
 }
 .ri-arrow-right-up-long-line {
@@ -1179,13 +1184,6 @@ footer h3 {
   .nav-start a {
     font-size: 14px !important;
     color: #000 !important;
-  }
-  .nav-start .yellow-btn {
-    padding: 7px 20px;
-    font-weight: 400;
-  }
-  .nav-start .yellow-icon {
-    padding: 7px 14px !important;
   }
   .look {
     display: flex;
