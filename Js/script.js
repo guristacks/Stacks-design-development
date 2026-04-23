@@ -330,7 +330,7 @@ const whoWeAreSecAnime = () => {
     scrollTrigger: {
       trigger: ".who-we-are-content",
       scroller: "body",
-      start: "top 80%",
+      start: "top 70%",
       end: "top 40%",
       scrub: 1,
     },
@@ -343,7 +343,7 @@ const whoWeAreSecAnime = () => {
     scrollTrigger: {
       trigger: ".who-we-are-content",
       scroller: "body",
-      start: "top 80%",
+      start: "top 70%",
       end: "top 40%",
       scrub: 1,
     },
@@ -371,7 +371,7 @@ const workSecAnime = () => {
     scrollTrigger: {
       trigger: ".work-title",
       scroller: "body",
-      start: "top 80%",
+      start: "top 70%",
       end: "top 40%",
       scrub: 1,
     },
@@ -384,7 +384,7 @@ const workSecAnime = () => {
     scrollTrigger: {
       trigger: ".work-title",
       scroller: "body",
-      start: "top 80%",
+      start: "top 70%",
       end: "top 40%",
       scrub: 1,
     },
@@ -410,7 +410,7 @@ const workSecAnime = () => {
     scrollTrigger: {
       trigger: ".work-right",
       scroller: "body",
-      start: "top 80%",
+      start: "top 70%",
       end: "top 40%",
       scrub: 1,
     },
@@ -426,7 +426,7 @@ const expertiseSecAnime = () => {
       scroller: "body",
       trigger: ".our-expertise",
       scrub: 1,
-      start: "top 80%",
+      start: "top 70%",
       end: "top 40%",
     },
   });
@@ -439,7 +439,7 @@ const expertiseSecAnime = () => {
       scroller: "body",
       trigger: ".our-expertise",
       scrub: 1,
-      start: "top 80%",
+      start: "top 70%",
       end: "top 40%",
     },
   });
@@ -491,7 +491,7 @@ const aboutUsSecAnime = () => {
       scroller: "body",
       trigger: "#ABOUT",
       scrub: 1,
-      start: "top 80%",
+      start: "top 70%",
       end: "top 40%",
     },
   });
@@ -507,7 +507,7 @@ const blogSecAnime = () => {
       scroller: "body",
       trigger: "#BLOG",
       scrub: 1,
-      start: "top 80%",
+      start: "top 70%",
       end: "top 40%",
     },
   });
