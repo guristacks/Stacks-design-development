@@ -514,6 +514,22 @@ const blogSecAnime = () => {
 
 };
 
+const aiAnime = () => {
+  gsap.from(".ai-content", {
+    y: 50,
+    transform: "scale(0.8)",
+    opacity: 0,
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".ai-content",
+      scrub: 1,
+      start: "top 70%",
+      end: "top 40%",
+    },
+  });
+
+};
+
 mainAnime();
 
 whoWeAreSecAnime();
@@ -525,3 +541,5 @@ expertiseSecAnime();
 aboutUsSecAnime();
 
 blogSecAnime();
+
+aiAnime();
