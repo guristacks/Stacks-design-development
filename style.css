@@ -984,13 +984,14 @@ footer h3 {
     object-fit: cover;
     border-radius: 20px;
     opacity: 0.7;
+    transform: rotate(15deg);
   }
   .ai-2 {
-    top: 0;
+    top: 5%;
     left: 20px;
   }
   .ai-3 img {
-    width: 200px;
+    width: 180px;
     height: 300px;
     object-fit: cover;
     border-radius: 20px;
@@ -1003,7 +1004,7 @@ footer h3 {
   }
   .ai-4 img {
     width: 150px;
-    height: 200px;
+    height: 185px;
     object-fit: cover;
     border-radius: 20px;
   }
