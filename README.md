@@ -1,78 +1,98 @@
 # 🚀 Stacks
 
-**Stacks** is a modern web design and development company based in India, focused on building high-performance digital experiences that help businesses grow, scale, and stand out in the digital world.
+Stacks is a modern and clean multi-section website UI built as a practice project to explore real-world agency-style layouts, smooth animations, and structured design systems.
+The goal of this project is to replicate a professional website experience with strong visual hierarchy and polished UI — while keeping it simple and focused on frontend fundamentals.
 
-We combine creativity with cutting-edge technology to deliver products that are not just visually appealing, but also functional, scalable, and user-focused. 
-
----
-
-## 👨‍💼 Leadership
-
-**Founder & CEO**
-**Gurwinder Singh (Guri Ghumaan)**
-
-Driving the vision, strategy, and execution of Stacks with a focus on innovation, quality, and long-term client success.
+**View Live Site** 🔗 https://stacks-design-development.vercel.app/
 
 ---
 
-## 💼 What We Do
+## ⭐ Disclaimer
 
-At Stacks, we provide end-to-end digital solutions tailored to your business needs:
-
-* 🎯 Brand Identity
-* 💻 Web Development
-* 📱 App Development
-* 🛍 Shopify Development
-* 🌐 WordPress Development
-* ⚡ Webflow Development
-* 🎨 Framer Development
-* 🧠 UI/UX Design
-* 📈 SEO Optimization
-* 🧩 Craft CMS Development
+This project is created for educational and portfolio purposes only.
+It does not represent any real company or client work.
 
 ---
 
-## 📊 Our Impact
+## 🎯 Project Purpose
 
-We believe in delivering results that speak for themselves:
-
-* ✅ **550+ Happy Clients**
-* 🌍 **200+ Websites Delivered**
-* 📱 **300+ Apps Developed**
-* 🤝 **90+ Brands Trust Us**
+This project is created as a portfolio piece to showcase frontend development skills, UI/UX design sense, and the ability to build modern, high-performance multi-page websites.
 
 ---
 
-## 💡 Our Approach
-
-We follow a simple yet powerful approach:
-
-1. **Understand** – Deep dive into your business and goals
-2. **Design** – Create intuitive and engaging user experiences
-3. **Develop** – Build fast, scalable, and secure solutions
-4. **Deliver** – Ensure quality and performance
-5. **Grow** – Support and optimize for long-term success
-
----
-
-## 🌟 Why Choose Stacks?
-
-* ✔️ Client-first mindset
-* ✔️ Modern design + clean code
-* ✔️ Performance-driven development
-* ✔️ Scalable and future-ready solutions
-* ✔️ Transparent communication
+## 📄 Sections Included
+1. Hero 
+2. Who we are
+3. Trusted Brands
+4. Our Work
+5. Our Expertises
+6. About us
+7. Lets work together (CTA)
+8. Blogs
+9. Ai about us
+10. Footer + Contact + Social Links
 
 ---
 
-## 📬 Let’s Build Something Great
-
-Whether you're a startup, brand, or enterprise — Stacks is your partner in creating impactful digital products.
-
-> Turning ideas into powerful digital experiences.
+## 📌 Features & ⚡ Optimization Techniques
+💎 Modern and clean UI design
+🎨 Well-structured layout system
+📱 Fully responsive (Mobile, Tablet, Desktop)
+🖼️ Optimized images (WebP format)
+⚡ Lazy loading for better performance
+📦 Minified CSS and JavaScript
+🧠 Clean and efficient DOM structure
+🚫 Reduced render-blocking resources
+🎯 Smooth scrolling and subtle animations
 
 ---
 
-## ©️ Copyright
+## 🚀 Performance
 
-© 2026 Stacks. All rights reserved.
+The project focuses on delivering a smooth and lightweight experience using modern frontend practices and optimized assets.
+
+---
+
+## 📊 Lighthouse Scores
+
+### 💻 Desktop Score
+- Performance: 90+
+- Accessibility: 90+
+- Best Practices: 100
+- SEO: 95+
+
+### 📱 Mobile Score
+- Performance: 85+
+- Accessibility: 90+
+- Best Practices: 100
+- SEO: 95+
+
+---
+
+## 👨‍💻 About Developer
+
+**Name:** Gurwinder Singh (Guri Ghumaan) <br>
+**Role:** Frontend Web Developer <br>
+**Focus:** Building clean, modern, and interactive web interfaces
+
+---
+
+## 🛠️ Tech Stack
+- HTML5
+- CSS3
+- JavaScript
+- GSAP 
+- Lenis
+- Git & Github
+
+---
+
+## 📬 Contact
+- GitHub: https://github.com/guristacks
+- LinkedIn: https://www.linkedin.com/in/guristacks
+
+---
+
+## 🌟 Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
