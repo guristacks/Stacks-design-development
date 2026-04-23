@@ -287,31 +287,36 @@ letsworkAnimation();
 const mainAnime = () => {
   tl.from("header", {
     delay: 0.5,
-    y: -20,
+    transform: "scale(0.8)",
+    y: -30,
     duration: 0.3,
     opacity: 0,
   });
 
   tl.from(".hero-content .hey", {
-    y: 20,
+    y: 50,
+    transform: "scale(0.8)",
     duration: 0.2,
     opacity: 0,
   });
 
   tl.from(".hero-content h1", {
-    y: 20,
+    y: 50,
+    transform: "scale(0.8)",
     duration: 0.2,
     opacity: 0,
   });
 
   tl.from(".hero-content .hero-des", {
-    y: 20,
+    y: 50,
+    transform: "scale(0.8)",
     duration: 0.2,
     opacity: 0,
   });
 
   tl.from(".hero-content .cta-set", {
-    y: 20,
+    y: 50,
+    transform: "scale(0.8)",
     duration: 0.2,
     opacity: 0,
   });
@@ -320,6 +325,7 @@ const mainAnime = () => {
 const whoWeAreSecAnime = () => {
   gsap.from(".who-we-are-content .title", {
     opacity: 0,
+    transform: "scale(0.8)",
     y: 50,
     scrollTrigger: {
       trigger: ".who-we-are-content",
@@ -332,6 +338,7 @@ const whoWeAreSecAnime = () => {
 
   gsap.from(".who-we-are-content h2", {
     opacity: 0,
+    transform: "scale(0.8)",
     y: 50,
     scrollTrigger: {
       trigger: ".who-we-are-content",
@@ -344,6 +351,7 @@ const whoWeAreSecAnime = () => {
 
   gsap.from(".who-we-are-two-cta", {
     opacity: 0,
+    transform: "scale(0.8)",
     y: 50,
     scrollTrigger: {
       trigger: ".who-we-are-content",
@@ -358,6 +366,7 @@ const whoWeAreSecAnime = () => {
 const workSecAnime = () => {
   gsap.from(".work-title .title", {
     opacity: 0,
+    transform: "scale(0.8)",
     y: 50,
     scrollTrigger: {
       trigger: ".work-title",
@@ -370,6 +379,7 @@ const workSecAnime = () => {
 
   gsap.from(".work-title h2", {
     opacity: 0,
+    transform: "scale(0.8)",
     y: 50,
     scrollTrigger: {
       trigger: ".work-title",
@@ -382,6 +392,7 @@ const workSecAnime = () => {
 
   gsap.from(".work-left .work", {
     opacity: 0,
+    transform: "scale(0.8)",
     y: 50,
     scrollTrigger: {
       trigger: ".work-left",
@@ -394,6 +405,7 @@ const workSecAnime = () => {
 
   gsap.from(".work-right", {
     opacity: 0,
+    transform: "scale(0.8)",
     y: 50,
     scrollTrigger: {
       trigger: ".work-right",
@@ -406,9 +418,9 @@ const workSecAnime = () => {
 };
 
 const expertiseSecAnime = () => {
-  
   gsap.from(".our-expertise .headings .title", {
     y: 50,
+    transform: "scale(0.8)",
     opacity: 0,
     scrollTrigger: {
       scroller: "body",
@@ -421,6 +433,7 @@ const expertiseSecAnime = () => {
 
   gsap.from(".our-expertise .headings h2", {
     y: 50,
+    transform: "scale(0.8)",
     opacity: 0,
     scrollTrigger: {
       scroller: "body",
@@ -433,6 +446,7 @@ const expertiseSecAnime = () => {
 
   gsap.from(".our-expertise-para", {
     y: 50,
+    transform: "scale(0.8)",
     opacity: 0,
     scrollTrigger: {
       scroller: "body",
@@ -468,6 +482,22 @@ const expertiseSecAnime = () => {
   });
 };
 
+const aboutUsSecAnime = () => {
+  gsap.from("#ABOUT", {
+    y: 50,
+    transform: "scale(0.8)",
+    opacity: 0,
+    scrollTrigger: {
+      scroller: "body",
+      trigger: "#ABOUT",
+      scrub: 1,
+      start: "top 80%",
+      end: "top 40%",
+    },
+  });
+
+};
+
 mainAnime();
 
 whoWeAreSecAnime();
@@ -475,3 +505,5 @@ whoWeAreSecAnime();
 workSecAnime();
 
 expertiseSecAnime();
+
+aboutUsSecAnime();
