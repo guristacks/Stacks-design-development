@@ -318,10 +318,9 @@ const mainAnime = () => {
 };
 
 const whoWeAreSecAnime = () => {
-  
   gsap.from(".who-we-are-content .title", {
     opacity: 0,
-    y: 30,
+    y: 50,
     scrollTrigger: {
       trigger: ".who-we-are-content",
       scroller: "body",
@@ -333,7 +332,7 @@ const whoWeAreSecAnime = () => {
 
   gsap.from(".who-we-are-content h2", {
     opacity: 0,
-    y: 30,
+    y: 50,
     scrollTrigger: {
       trigger: ".who-we-are-content",
       scroller: "body",
@@ -345,7 +344,7 @@ const whoWeAreSecAnime = () => {
 
   gsap.from(".who-we-are-two-cta", {
     opacity: 0,
-    y: 30,
+    y: 50,
     scrollTrigger: {
       trigger: ".who-we-are-content",
       scroller: "body",
@@ -357,10 +356,9 @@ const whoWeAreSecAnime = () => {
 };
 
 const workSecAnime = () => {
-  
   gsap.from(".work-title .title", {
     opacity: 0,
-    y: 30,
+    y: 50,
     scrollTrigger: {
       trigger: ".work-title",
       scroller: "body",
@@ -372,7 +370,7 @@ const workSecAnime = () => {
 
   gsap.from(".work-title h2", {
     opacity: 0,
-    y: 30,
+    y: 50,
     scrollTrigger: {
       trigger: ".work-title",
       scroller: "body",
@@ -384,7 +382,7 @@ const workSecAnime = () => {
 
   gsap.from(".work-left .work", {
     opacity: 0,
-    y: 30,
+    y: 50,
     scrollTrigger: {
       trigger: ".work-left",
       scroller: "body",
@@ -396,7 +394,7 @@ const workSecAnime = () => {
 
   gsap.from(".work-right", {
     opacity: 0,
-    y: 30,
+    y: 50,
     scrollTrigger: {
       trigger: ".work-right",
       scroller: "body",
@@ -407,8 +405,73 @@ const workSecAnime = () => {
   });
 };
 
+const expertiseSecAnime = () => {
+  
+  gsap.from(".our-expertise .headings .title", {
+    y: 50,
+    opacity: 0,
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".our-expertise",
+      scrub: 1,
+      start: "top 80%",
+      end: "top 40%",
+    },
+  });
+
+  gsap.from(".our-expertise .headings h2", {
+    y: 50,
+    opacity: 0,
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".our-expertise",
+      scrub: 1,
+      start: "top 80%",
+      end: "top 40%",
+    },
+  });
+
+  gsap.from(".our-expertise-para", {
+    y: 50,
+    opacity: 0,
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".our-expertise-para",
+      scrub: 1,
+      start: "top 90%",
+      end: "top 50%",
+    },
+  });
+
+  gsap.from(".expertises", {
+    y: 50,
+    opacity: 0,
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".expertises",
+      scrub: 1,
+      start: "top 90%",
+      end: "top 50%",
+    },
+  });
+
+  gsap.from(".hear", {
+    y: 50,
+    opacity: 0,
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".hear",
+      scrub: 1,
+      start: "top 90%",
+      end: "top 50%",
+    },
+  });
+};
+
 mainAnime();
 
 whoWeAreSecAnime();
 
 workSecAnime();
+
+expertiseSecAnime();

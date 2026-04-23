@@ -68,7 +68,6 @@ main {
 }
 section {
   user-select: none;
-  overflow: hidden;
   color: #fff;
   padding: 50px 0px;
 }
@@ -513,7 +512,7 @@ sup {
 }
 .hear {
   position: sticky;
-  top: 20vh;
+  top: 10vh;
   left: 0;
   right: 0;
   width: fit-content;
@@ -1267,6 +1266,9 @@ footer h3 {
   .expertises h3 {
     color: #fff;
     font-size: 8vw;
+  }
+  .our-expertise .headings .two-cta{
+    display: flex;
   }
   .expertise-cta {
     width: 100%;
