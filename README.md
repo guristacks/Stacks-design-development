@@ -82,6 +82,7 @@ The project focuses on delivering a smooth and lightweight experience using mode
 - `GSAP`  
 - `Lenis` 
 - `Git & Github` 
+- `Deployment`
 
 ---
 
