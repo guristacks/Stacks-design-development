@@ -12,10 +12,6 @@ The goal of this project is to replicate a professional website experience with 
 This project is created for educational and portfolio purposes only.
 It does not represent any real company or client work.
 
----
-
-## 🎯 Project Purpose
-
 This project is created as a portfolio piece to showcase frontend development skills, UI/UX design sense, and the ability to build modern, high-performance multi-page websites.
 
 ---
@@ -78,18 +74,25 @@ The project focuses on delivering a smooth and lightweight experience using mode
 ---
 
 ## 🛠️ Tech Stack
-- HTML5
-- CSS3
-- JavaScript
-- GSAP 
-- Lenis
-- Git & Github
+
+- `HTML5`  
+- `CSS3`  
+- `JavaScript`  
+- `React.js`
+- `GSAP`  
+- `Lenis` 
+- `Git & Github` 
 
 ---
 
 ## 📬 Contact
-- GitHub: https://github.com/guristacks
-- LinkedIn: https://www.linkedin.com/in/guristacks
+
+If you're looking for a modern website, landing page, or interactive frontend experience, feel free to reach out.
+
+- **GitHub :** https://github.com/guristacks  
+- **LinkedIn :** https://www.linkedin.com/in/guristacks
+- **Email :** [guristacks@gmail.com](mailto:guristacks@gmail.com)
+- **Instagram :** https://www.instagram.com/guri_ghumxn 
 
 ---
 
