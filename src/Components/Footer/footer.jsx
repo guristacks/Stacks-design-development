@@ -4,16 +4,16 @@ import { MoveUpRight } from 'lucide-react';
 const FooterSec = () => {
   return (
     <footer id="CONTACT" role="contentinfo">
-      <div className="container">
-        <div className="shit flex">
+      <div classNameName="container">
+        <div classNameName="shit flex">
           <p>
             <a href="#HERO">Sh*t I’ve gone too far, send me back up ☝🏼</a>
           </p>
         </div>
 
-        <div className="five-row flex sb">
-          <div className="like flex">
-            <div className="social-icons flex f-clmn">
+        <div classNameName="five-row flex sb">
+          <div classNameName="like flex">
+            <div classNameName="social-icons flex f-clmn">
               <a target="_blank" href="https://www.linkedin.com/in/guristacks/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -70,15 +70,15 @@ const FooterSec = () => {
                 </svg>
               </a>
             </div>
-            <div className="like-us flex f-clmn">
+            <div classNameName="like-us flex f-clmn">
               <h2>
                 Do you like <br />
                 what you see?
               </h2>
-              <div className="cta-review flex ac sb">
-                <div className="two-cta flex ac">
-                  <button className="yellow-btn">View our work</button>
-                  <button className="yellow-icon">
+              <div classNameName="cta-review flex ac sb">
+                <div classNameName="two-cta flex ac">
+                  <button classNameName="yellow-btn">View our work</button>
+                  <button classNameName="yellow-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -86,23 +86,23 @@ const FooterSec = () => {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="#000000"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-move-up-right-icon lucide-move-up-right"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="lucide lucide-move-up-right-icon lucide-move-up-right"
                     >
                       <path d="M13 5H19V11" />
                       <path d="M19 5L5 19" />
                     </svg>
                   </button>
                 </div>
-                <div className="review-count flex f-clmn">
+                <div classNameName="review-count flex f-clmn">
                   <p>5.0 from 69 reviews</p>
-                  <div className="logo-stars flex ac">
+                  <div classNameName="logo-stars flex ac">
                     <a target="_blank" href="https://www.google.com/">
                       <img
                         src="Images/Work/google.webp"
-                        srcset="
+                        srcSet="
                                         Images/Work/google.webp 90w,
                                         Images/Work/google.webp 180w
                                         "
@@ -113,89 +113,89 @@ const FooterSec = () => {
                         alt="Google logo"
                       />
                     </a>
-                    <div className="stars flex ac">★★★★★</div>
+                    <div classNameName="stars flex ac">★★★★★</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="uls flex">
-            <div className="learn">
-              <ul className="Learn">
-                <li className="li-heading">Learn</li>
+          <div classNameName="uls flex">
+            <div classNameName="learn">
+              <ul classNameName="Learn">
+                <li classNameName="li-heading">Learn</li>
                 <li>
-                  <a className="links" href="#ABOUT">
+                  <a classNameName="links" href="#ABOUT">
                     About
                   </a>
                 </li>
                 <li>
-                  <a className="links" href="#HERO">
+                  <a classNameName="links" href="#HERO">
                     Culture
                   </a>
                 </li>
                 <li>
-                  <a className="links" href="#HERO">
+                  <a classNameName="links" href="#HERO">
                     Testimonials
                   </a>
                 </li>
                 <li>
-                  <a className="links" href="#HERO">
+                  <a classNameName="links" href="#HERO">
                     Processes
                   </a>
                 </li>
                 <li>
-                  <a className="links" href="#HERO">
+                  <a classNameName="links" href="#HERO">
                     FAQs
                   </a>
                 </li>
                 <li>
-                  <a className="links" href="#HERO">
+                  <a classNameName="links" href="#HERO">
                     Branding FAQs
                   </a>
                 </li>
                 <li>
-                  <a className="links" href="#BLOG">
+                  <a classNameName="links" href="#BLOG">
                     Blogs
                   </a>
                 </li>
               </ul>
             </div>
-            <div className="explore">
-              <ul className="Explore">
-                <li className="li-heading">Explore</li>
+            <div classNameName="explore">
+              <ul classNameName="Explore">
+                <li classNameName="li-heading">Explore</li>
                 <li>
-                  <a className="links" href="#HERO">
+                  <a classNameName="links" href="#HERO">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a className="links" href="#WORK">
+                  <a classNameName="links" href="#WORK">
                     Work
                   </a>
                 </li>
                 <li>
-                  <a className="links" href="#SERVICES">
+                  <a classNameName="links" href="#SERVICES">
                     Services
                   </a>
                 </li>
                 <li>
-                  <a className="links" href="#HERO">
+                  <a classNameName="links" href="#HERO">
                     Careers
                   </a>
                 </li>
                 <li>
-                  <a className="links" href="#HERO">
+                  <a classNameName="links" href="#HERO">
                     Sectors
                   </a>
                 </li>
                 <li>
-                  <a className="links" href="#HERO">
+                  <a classNameName="links" href="#HERO">
                     Hex Test
                   </a>
                 </li>
                 <li>
-                  <a className="links" href="#CONTACT">
+                  <a classNameName="links" href="#CONTACT">
                     Contact
                   </a>
                 </li>
@@ -203,45 +203,45 @@ const FooterSec = () => {
             </div>
           </div>
 
-          <div className="touch flex f-clmn">
+          <div classNameName="touch flex f-clmn">
             <h4>Get in touch</h4>
-            <p className="links">
+            <p classNameName="links">
               <a href="tel:+91917696992194">
-                <i aria-hidden="true" className="ri-phone-fill"></i>
+                <i aria-hidden="true" classNameName="ri-phone-fill"></i>
                 91769 699 2194
               </a>
             </p>
             <p>
-              <a className="links" href="mailto:guristacks@gmail.com">
-                <i aria-hidden="true" className="ri-mail-fill"></i>
+              <a classNameName="links" href="mailto:guristacks@gmail.com">
+                <i aria-hidden="true" classNameName="ri-mail-fill"></i>
                 guristacks@gmail.com
               </a>
             </p>
             <p>
-              <i aria-hidden="true" className="ri-navigation-fill"></i> Stacks{" "}
+              <i aria-hidden="true" classNameName="ri-navigation-fill"></i> Stacks{" "}
               <br /> Dhuri Dist. Sangrur, Punjab India.
             </p>
             <p>
               <a
                 target="_blank"
-                className="links"
+                classNameName="links"
                 href="https://www.instagram.com/guristacks/"
               >
-                <i aria-hidden="true" className="ri-instagram-line"></i>{" "}
+                <i aria-hidden="true" classNameName="ri-instagram-line"></i>{" "}
                 guristacks
               </a>
             </p>
           </div>
         </div>
         <h3>Crafting since 2010</h3>
-        <div className="last-main flex f-clmn">
-          <div className="last1 flex">
+        <div classNameName="last-main flex f-clmn">
+          <div classNameName="last1 flex">
             <h4>Stacks</h4>
             <p>Stacks Ltd 2026</p>
             <p>|</p>
             <p>Company Reg Number xxxxxxxx</p>
           </div>
-          <div className="last1 flex">
+          <div classNameName="last1 flex">
             <p>Web Design India</p>
             <p>|</p>
             <p>All Rights Reserved</p>
@@ -249,7 +249,7 @@ const FooterSec = () => {
             <p>Privacy Policy</p>
           </div>
         </div>
-        <div className="on-mobile flex ac sb">
+        <div classNameName="on-mobile flex ac sb">
           <h4>Stacks</h4>
           <p>
             <a href="#HERO">Sh*t I’ve gone too far, send me back up ☝🏼</a>
