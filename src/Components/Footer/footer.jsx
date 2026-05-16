@@ -1,7 +1,7 @@
 import React from "react";
 import { MoveUpRight } from 'lucide-react';
 
-const Footer = () => {
+const FooterSec = () => {
   return (
     <footer id="CONTACT" role="contentinfo">
       <div className="container">
@@ -260,4 +260,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterSec;
