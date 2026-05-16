@@ -10,7 +10,6 @@ import Together from "./Components/TogetherSec/Together";
 import Blogs from "./Components/BlogsSec/Blogs";
 import Ai from "./Components/AiSec/Ai";
 import Script from "./Script";
-import FooterSec from "./Components/Footer/Footer";
 
 const App = () => {
   return (
@@ -26,7 +25,6 @@ const App = () => {
       <Together />
       <Blogs />
       <Ai />
-      <FooterSec />
     </main>
   );
 };
