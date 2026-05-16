@@ -789,7 +789,7 @@ footer {
   border-radius: 50px;
   height: fit-content;
 }
-.social-icons svg{
+.social-icons svg {
   background: var(--yellow);
   padding: 3px;
   border-radius: 50%;
